@@ -1,0 +1,574 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+html, body{
+
+	width: 100%;
+	height: 100%;
+}
+
+p{
+	white-space: pre-wrap;
+}
+
+table, td, th {
+
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+th{
+
+    text-align: center;
+    font-weight: bold;
+    background-color: #0288D1;
+    padding: 10px 10px 10px 10px;
+    font-family: verdana;
+    font-size: 11pt;
+}
+
+td {
+
+    text-align: center;
+    padding: 15px 15px 15px 15px;
+    white-space: pre-wrap;
+}
+
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #1565C0;
+    border-radius: 4px;
+    font-family: verdana;
+}
+
+input[type=password]{
+
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #1565C0;
+    border-radius: 4px;
+    font-family: verdana;
+}
+
+input[type=file] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #1565C0;
+    border-radius: 4px;
+    font-family: verdana;
+    background: white;
+    color: black;
+}
+
+input[type=submit]{
+    font-family: verdana;
+    font-size: 10pt;
+    font-weight: bold;
+    width: 100%;
+    background-color: white;
+    border: 2px solid #1565C0;
+    color: #1565C0;
+    text-decoration: none;
+    padding: 20px;
+    margin: 0 0 5% 0;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+
+    background: #1565C0;
+    color: white; 
+    border: 2px solid white;
+}
+
+textarea{
+
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #1565C0;
+    border-radius: 4px;
+    font-family: verdana;
+}
+
+form{
+
+    margin: 2% 2% 2% 2%;
+}
+
+#header{
+
+	width: 100%;
+	height: 100%;
+	background: url(gambar/JamGadang.jpg);
+	background-size: 100% 100%;
+}
+
+#backgroundTeksIndex{
+
+	width: 100%;
+	height: 35%;
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+
+    margin: auto;
+    color: white;
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+
+#teksJudulIndex{
+
+	font-size: 30pt;
+	font-weight: bold;
+}
+
+#deskripsiIndex{
+
+	font-family: verdana;
+	font-size: 11pt;
+	font-weight: normal;
+}
+
+#buttonIndex{
+	background-color: #1E88E5;
+    border: none;
+    color: white;
+    font-family: verdana;
+    font-weight: bold;
+    width: 200px;
+    height: 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11pt;
+    -webkit-transition-duration: 1s; /* Safari */
+    transition-duration: 1s;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+#buttonIndex:hover {
+    background-color: #1565C0;
+}
+
+#peta{
+
+	width: 100%;
+	height: 100%;
+}
+
+#navigation{
+
+	float: left;
+  	width: 5%;
+  	height: 100%;
+  	background-color: #1565C0;
+
+
+}
+
+#buttonNavigation{
+
+    margin: 25%;
+	font-size: 20pt;
+	font-weight: bold;
+	cursor: pointer;
+	color: white;
+	font-family: verdana;
+}
+
+#map{
+
+	width: 95%;
+	height: 100%;
+	float: right;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #1E88E5;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+	font-family: verdana;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15pt;
+    color: white;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: black;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+#contentDaftarWisata{
+
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+#judulDaftarWisata{
+
+    height: 11%;
+    width: 100%;
+    background: #1565C0;    
+}
+
+#teksJudulDaftarWisata{
+
+    color: white;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+#contentTabelDaftarWisata{
+
+    width: 92%;
+    height: 89%;
+    margin: 2% 4% 0% 4%;
+    text-align: center;
+}
+
+
+#gambarTabel{
+
+    height: 350px;
+    width: 250px;
+}
+
+#tabelDaftarWisata{
+
+    width: 100%;
+    font-size: 11pt;
+    font-family: verdana;
+}
+
+#contentTambahWisata{
+
+    width: 100%;
+    background: #42A5F5;
+}
+
+#judulTambahWisata{
+
+    height: 75px;
+    width: 100%;
+    background: #1565C0;    
+}
+
+#teksJudulTambahWisata{
+
+    color: white;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+#contentFormTambahWisata{
+
+    width: 40%;
+    margin: 2% 30% 0% 30%;
+    background: #42A5F5;
+    font-family: verdana;
+    font-size: 11pt;
+}
+
+#wrapperLoginAdmin{
+
+    width: 100%;
+    height: 100%;
+    background: #42A5F5;
+}
+
+#contentLoginAdmin{
+
+    float: right;
+    width: 40%;
+    margin: 10% 26% 0% 0%;
+    background: #42A5F5;
+    color: white;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 30pt;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+#contentAdministrator{
+
+    width: 100%;
+    background: white;
+}
+
+#headerAdministrator{
+
+    height: auto;
+    width: 100%;
+    padding: 0% 0% 1% 0%;
+    background: #1565C0;    
+}
+
+#teksHeaderAdministrator{
+
+    color: white;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+#MenuAdministrator{
+
+    margin-left: 12.5%;
+    font-weight: bold;
+    color: white;
+    font-size: 14pt;
+    font-family: verdana;
+}
+
+
+#MenuAdministrator: ul {
+
+  list-style:none; /*menghilangkan dot list*/
+  text-decoration-color: black;
+
+}
+
+#MenuAdministrator: li {
+
+  display:inline; /*membuat menu menjadi Horizontal*/
+}   
+
+#opsiDaftarWisata {
+    position: relative;
+    width: 100%;
+    background: #42A5F5;
+
+    text-align: left;
+    color: white;
+    font-family: verdana;
+    font-size: 11pt;
+    font-weight: bold;
+}
+
+#tambahDaftarWisata {
+    width: 49%;
+    float: left;
+    height: 1250px;
+    background: #42A5F5;
+    font-family: verdana;
+    font-size: 11pt;
+
+}
+
+#teksTambahWisata{
+
+    font-size: 15pt;
+}
+
+#ubahDaftarWisata {
+    width: 49%;
+    height: 1250px;
+    float: right;
+    background: #42A5F5;
+    font-family: verdana;
+    font-size: 11pt;
+}
+
+#teksUbahWisata{
+
+    font-size: 15pt;
+}
+
+#hapusDaftarWisata{
+
+    width: 49%;
+    text-align: left;
+    margin: 0% 0% 0% 25%; 
+    color: white;
+    font-weight: bold;
+    background-color: #42A5F5;
+    font-family: verdana;
+    font-size: 11pt;
+    margin-top: 100%;
+}
+
+#teksHapusWisata{
+
+    font-size: 15pt;
+}
+
+.styled-select.slate {
+
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #1565C0;
+    border-radius: 4px;
+    font-family: verdana;
+    width: 100%;
+    font-size: 10pt;
+}
+
+#contentTabelWisataUser{
+
+    width: 92%;
+    height: 89%;
+    margin: 2% 4% 0% 4%;
+    text-align: center;
+}
+
+#tabelWisataUser{
+
+    width: 100%;
+    font-size: 11pt;
+    font-family: verdana;
+}
+
+#tabelWisataUser td{
+
+    text-align: justify;
+}
+
+#opsiWisataUser{
+
+    width: 92%;
+    height: 33%;
+    margin: 2% 4% 0% 4%;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+    background-color: #42A5F5;
+    font-family: verdana;
+    font-size: 11pt;
+}
+
+#tambahWisataUser{
+
+    width: 40%;
+    height: 100%;
+    margin: 1% 30% 1% 30%;
+}
+
+#teksTambahWisataUser{
+
+    font-size: 14pt;
+}
+
+#contentTabelAdministrator{
+
+    width: 40%;
+    margin: 2% 30% 0% 30%;
+    text-align: center;
+}
+
+#tabelAdministrator{
+
+    width: 100%;
+    font-size: 11pt;
+    font-family: verdana;
+}
+
+#opsiAdministrator{
+
+    width: 92%;
+    font-family: verdana;
+    font-size: 11pt;
+    color: white;
+    font-weight: bold;
+    margin: 2% 4% 2% 4%;
+    position: relative;
+
+}
+
+#opsiAdministrator div{
+
+     height: 375px;
+}
+
+#tambahAdmin{
+
+    width: 32%;
+    left: 0;
+    background: #42A5F5;
+    position: absolute;
+}
+
+#ubahAdmin{
+
+    width: 34%;
+    background: #42A5F5;
+    margin-left: 33%;
+    position: absolute;
+}
+
+#hapusAdmin{
+
+    width: 32%;
+    right: 0;
+    position: absolute;
+    background: #42A5F5;
+}
+
+#teksTambahAdmin{
+
+    font-size: 15pt;
+}
+
+#teksUbahAdmin{
+
+    font-size: 15pt;
+}
+
+#teksHapusAdmin{
+
+    font-size: 15pt;
+}
